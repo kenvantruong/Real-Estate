@@ -1,0 +1,1014 @@
+* {
+	margin: 0;
+}
+
+/* NAV */
+.navBar {
+	height: 70px;
+
+}
+
+/*
+<nav class="navBar">
+			<div class="container">
+				<div class="realEstateDiv">
+					<div class="insideLeftDiv">
+							<h3 class="realText">Real</h3>
+							<h4 class="estateText">Estate</h4>
+						</div>
+							</div>
+							<div class="signInJoin">
+								<div class="insideSignInJoin">
+									<div class="signInText">SIGN IN</div>
+									<div class="joinInText">JOIN</div>
+								</div>
+									</div>
+				</div>
+		</nav>
+*/
+
+/* Navagation Div */
+.container{	display: flex;}
+
+/* Navagation Left Part */
+
+
+.realEstateDiv {
+	/* float: left;
+    position: relative;
+		width: 50%; */
+		flex: 2;
+    top: 18px;
+    font-family: 'Lato', sans-serif;
+}
+
+.insideLeftDiv {
+	padding: 30px;
+	/* background-color: blue; */
+
+}
+.realText {
+	font-size: 28px;
+	letter-spacing: 10px;
+	font-weight: 100;
+}
+
+.estateText {
+	font-size: 18px;
+	letter-spacing: 8px;
+	font-weight: 100;
+}
+
+
+/* Navagation Right Part */
+
+.signInJoin {
+	/* position: relative;
+    width: 50%;
+    top: 25px;
+    float: right;
+		display: inline-block; */
+		flex: 1;
+		/* background: red; */
+		font-family: 'Lato', sans-serif;
+		padding: 30px;
+}
+
+.insideSignInJoin {
+	display: flex;
+	float: right;
+}
+
+.signInText {
+	margin: 5px;
+	padding: 10px;
+	display: inline-block;
+	/* border: 1px solid black; */
+	font-weight: 100;
+	width: 60px;
+	text-align: center;
+	font-size: 12px;
+}
+.joinInText {
+	margin: 5px;
+	padding: 10px;
+	width: 60px;
+	border: 1px solid #5281e7;
+	display: inline-block;
+	font-weight: 100;
+	font-size: 12px;
+	color: white;
+	background-color: #5281e7;
+	text-align: center;
+}
+
+/* HOUSE ICON */
+	.houseIconDiv {
+		position: relative;
+		top: 53px;
+		height: 70px;
+		width: 100%;
+	}
+
+	.houseIconLogoDiv {
+		position: relative;
+		margin: 0 auto;
+		height: 70px;
+		width: 70px;
+		right: 7px;
+		bottom: 10px;
+	}
+
+	.houseIcon {
+		background-image: url(../img/houseIcon.png);
+		background-size: cover;
+		height: 100%;
+		width: 100%;
+		/* margin: 0 auto; */
+	}
+
+
+
+
+/*UNDER HOUSEICON TEXT*/
+.mainfontRealEstateDiv {
+	position: relative;
+	top: 55px;
+	left: 8px;
+	height: 140px;
+	text-align: center;
+	/* font-family: 'Poiret One', cursive; */
+	/* font-family: 'Abril Fatface', cursive; */
+	/* font-weight: lighter; */
+}
+
+.REALh1 {
+	font-size: 3em;
+	letter-spacing: 15px;
+	font-weight: lighter;
+	font-family: 'Abril Fatface', cursive;
+}
+
+.REALStyle {
+	letter-spacing: 15px;
+	font-weight: 900;
+}
+.ESTATEh2 {
+	font-size: 1.5em;
+	letter-spacing: 15px;
+	font-weight: 300;
+	/* font-family: 'Abril Fatface', cursive; */
+	color: grey;
+}
+
+.styleHR {
+
+}
+
+
+.brUnderMainFont {
+	position: relative;
+	top: 45px;
+	right: 10px;
+	width: 150px;
+	margin: 0 auto;
+}
+
+
+
+/*PARAGRAPH UNDER MAIN REAL ESTATE FONT!*/
+.BOLDBOLD {
+	font-weight: 700;
+}
+
+.REALparagraphMainDiv {
+	position: relative;
+	top: 100px;
+	left: 8px;
+	height: 140px;
+	width: 100%;
+	text-align: center;
+}
+
+.REALparagraphDiv {
+	width: 100%;
+	/* font-family: 'Lato', sans-serif; */
+}
+
+.REALparagraph {
+	line-height: 40px;
+	overflow: visible;
+	font-size: 20px;
+	margin: 0 auto;
+	font-family: 'Lato', sans-serif;
+}
+
+/* SEARCH BAR SECTION AND TOGGLE */
+.toggleIconDiv {
+	height: 45px;
+	width: 45px;
+	/* position: relative;
+	top: 93px;
+	left: 160px; */
+	flex: 1;
+}
+
+.toggleIconh1 {
+	background-image: url(../img/toggleICON.png);
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+
+}
+
+/************************/
+
+.search-bar-container {
+	display: flex;
+	top: 95px;
+	position: relative;
+	height: 49px;
+}
+
+.search-container{
+  width: 490px;
+  display: block;
+  margin: 0 auto;
+}
+
+input#search-bar{
+  margin: 0 auto;
+  width: 100%;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 1rem;
+  border: 1px solid #D0CFCE;
+  outline: none;
+  &:focus{
+    border: 1px solid #008ABF;
+    transition: 0.35s ease;
+    color: #008ABF;
+    &::-webkit-input-placeholder{
+      transition: opacity 0.45s ease; 
+  	  opacity: 0;
+     }
+    &::-moz-placeholder {
+      transition: opacity 0.45s ease; 
+  	  opacity: 0;
+     }
+    &:-ms-placeholder {
+     transition: opacity 0.45s ease; 
+  	 opacity: 0;
+     }    
+   }
+ }
+
+.search-icon{
+  position: relative;
+  float: right;
+  width: 75px;
+  height: 75px;
+  top: -62px;
+  right: -45px;
+}
+
+
+
+
+
+/************************/
+
+/* <div class="searchBarSuperDiv">
+	<div class="toggleIconh1"></div>
+	<div class="searchbarDIVDIV">
+  <input type="search" class="searchbar--input" placeholder="Search...">
+  <div class="searchbar--buttons">
+    <input type="submit" class="searchbar--submit" value="Search">
+    <div class="select-wrapper">
+    </div>
+					  </div>
+  </div>
+</div> */
+
+.searchBarSuperDiv {
+	background: green;
+	display: flex;
+
+	/* height: 190px;
+	width: 100%;
+	position: relative;
+	top: 50px;
+	overflow: visible; */
+}
+
+
+.searchbarDIVDIV {
+	flex: 2;
+	width: 650px;
+	/* position: relative; */
+	top: 50px;
+	margin: 0 auto;
+	/* overflow: visible;
+	right: 50px; */
+	background-color: red;
+}
+
+
+/* SEARCH BAR */
+.searchbar {
+  position: relative;
+  top: 150px;
+  margin: 0 auto;
+  height: 60px;
+  min-width: 150px;
+  width: 100px;
+	
+  /* width: 600px !important; */
+}
+/* @media (min-width: 768px) {
+  .searchbar {
+    width: 70%;
+    height: 40px;
+    overflow: hidden;
+  }
+}
+@media (min-width: 1100px) {
+  .searchbar {
+    width: 50%;
+  }
+} */
+
+.searchbar--input,
+.searchbar--buttons {
+  top: 0;
+  right: 0;
+}
+/* @media (min-width: 768px) {
+  .searchbar--input,
+  .searchbar--buttons {
+    position: absolute;
+  }
+} */
+
+.searchbar--input,
+.searchbar--select,
+.searchbar--submit {
+  border: none;
+  outline: none;
+}
+
+.searchbar--input {
+  width: 80%;
+  padding: 20px 0 20px 10px;
+  height: 60px;
+  font-size: 12px;
+	font-weight: lighter;
+	background-color: blue;
+}
+
+
+/* @media (min-width: 768px) {
+  .searchbar--input {
+    height: 40px;
+  }
+} */
+
+.searchbar--submit,
+.searchbar--select {
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.searchbar--submit {
+  width: 80px;
+  height: 50px;
+  padding: 0;
+  margin: 5px;
+  line-height: 32px;
+  display: block;
+  float: right;
+  font-size: 14px;
+  letter-spacing: .5px;
+  /* border-radius: 4px; */
+  color: #fff;
+  background-color: #5281e7;
+}
+/* @media (max-width: 767px) {
+  .searchbar--submit {
+    width: 36%;
+  }
+}
+@media (min-width: 768px) {
+  .searchbar--submit {
+    height: 30px;
+  }
+} */
+
+.searchbar--select {
+  height: 50px;
+  margin: 5px 0;
+  padding: 0 40px 0 20px;
+  border-radius: 0;
+  color: black;
+  letter-spacing: .25px;
+}
+/* @media (max-width: 767px) {
+  .searchbar--select {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .searchbar--select {
+    height: 30px;
+  }
+} */
+
+.select-wrapper {
+  position: relative;
+  float: right;
+}
+/* @media (max-width: 767px) {
+  .select-wrapper {
+    width: 60%;
+  }
+} */
+.select-wrapper:after {
+  content: '>';
+  font: 18px "Consolas", monospace;
+  color: #b3b1b1;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  right: 20px;
+  top: 19px;
+  padding: 0 0 2px;
+  position: absolute;
+  pointer-events: none;
+}
+/* @media (min-width: 768px) {
+  .select-wrapper:after {
+    top: 10px;
+  }
+} */
+
+
+
+/**********************MENU AREA!!!!! *****************/
+
+.menuArea-Container {
+	display: flex;
+}
+
+.menuDiv {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	top: 500px;
+	/* background-color: green; */
+}
+
+.menuAndText {
+	position:relative;
+	left: 150px;
+	top: 50px;
+}
+
+	.menuIcon {
+		background-image: url(../img/menuIcon.png);
+		background-size: cover;
+		height: 100%;
+		width: 100%;
+	}
+
+.menuIconLogoDiv {
+	width: 65px;
+	height: 40px;
+	display: inline-block;
+}
+
+.menuText {
+	font-size: 20px;
+	/* font-family: 'Poiret One', cursive; */
+	font-family: 'Lato', sans-serif;
+}
+
+.menuTextDiv {
+	display: inline-block;
+	position: relative;
+	bottom: 12px;
+	left: 20px;
+}
+
+
+/* RIGHT UNDER MENU!!!!!! */
+.interiorExteriorBar {
+	width: 100%;
+	height: 30px;
+	/* background-color: red; */
+	position: relative;
+	top: 540px;
+	font-family: 'Lato', sans-serif;
+	/* font-weight: 900; */
+}
+
+.interiorExteriorDiv {
+	display: inline-block;
+	position: relative;
+	left: 110px;
+	/* font-weight: 900; */
+}
+
+.interiorText {
+	display: inline-block;
+	margin: 0px 20px 0px 20px;
+	font-size: 16px;
+	font-weight: 700;
+	font-weight: 900 !important;
+}
+
+.exteriorText {
+	display: inline-block;
+	margin: 0px 20px 0px 50px;
+	font-size: 16px;
+}
+
+
+.prevNextDiv {
+	float: right;
+	display: inline-block;
+	position: relative;
+	right: 490px;
+}
+
+.prevText {
+	display: inline-block;
+	font-size: 20px;
+	margin: 0px 10px 0px 10px;
+}
+
+/* <div class="prevNextHRDiv"><hr class="hrPrevNext"></hr></div> */
+
+.prevNextHRDiv {
+	display: inline-block;
+	position: relative;
+	bottom: 5px;
+}
+
+.hrPrevNext {
+	width: 20px;
+	color: black;
+}
+
+.nextText {
+	display: inline-block;
+	font-size: 20px;
+	margin: 0px 10px 0px 10px;
+}
+
+
+/* <nav class="navBar">
+	<div class="interiorExteriorDiv">
+			<h3 class="interiorText">INTERIOR</h3>
+			<h4 class="exteriorText">EXTERIOR</h4>
+	</div>
+	<div class="prevNextDiv">
+			<div class="prevText">PREV</div>
+			<div class="nextText">NEXT</div>
+	</div>
+</nav> */
+
+
+
+/* LEVEL 3 PAGE  */
+.latestPropertyDiv {
+	position: relative;
+	top: 15px;
+	left: 130px;
+	width: 600px;
+	height: 400px;
+	
+}
+
+.latestPropertyText {
+	font-size: 23px;
+	letter-spacing: 6px;
+	word-spacing: 25px;
+	line-height: 190px;
+	font-family: 'Poiret One', cursive;
+}
+
+.architText {
+	font-size: 95px;
+	letter-spacing: 16px;
+	word-spacing: 25px;
+	line-height: 145px;
+	font-family: 'Abril Fatface', cursive;
+	font-weight: lighter;
+}
+
+
+.modernMainDiv {
+	position: relative;
+	top: 140px;
+	width: 100%;
+	height: 300px;
+	overflow: visible;
+}
+
+.MODERNparagraphDiv {
+	position: relative;
+	left: 120px;
+	width: 530px;
+	height: 300px;
+
+
+}
+
+.REALmodernparagraph {
+	font-size: 22px;
+	line-height: 35px;
+	font-family: 'Lato', sans-serif;
+	/* font-family: 'Poiret One', cursive; */
+}
+
+
+
+/******************0102 LOGO AND DESIGN FONT!!!!*****************/
+.LOGOplusDESIGNDIV {
+	postion: relative;
+	position: relative;
+	top: 50px;
+	/* background-color: red; */
+	height: 300px;
+	width: 100%;
+}
+
+.zeroMainDiv {
+	display: inline-block;
+	/* background-color: green; */
+	height: 170px;
+	width: 70px;
+	position: relative;
+	left: 120px;
+}
+
+.zerohOneDiv {
+		background-image: url(../img/zeropic.png);
+		background-size: cover;
+		height: 100%;
+		width: 100%;
+		/* position: relative; */
+		/* left: 120px; */
+}
+
+.DESIGNPlusDiv {
+	float: right;
+	position: relative;
+	right: 210px;
+	top: 80px;
+}
+
+.classDesignText h6 {
+	display: inline block;
+	width: 50px;
+	position: relative;
+	right: 185px;
+	font-size: 20px;
+	letter-spacing: 6px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+}
+
+.hrDESIGNDiv {
+	position: relative;
+	left: 115px;
+	bottom: 13px;
+}
+
+.hrDESIGNStyle {
+	color: black;
+	width: 40px;
+	margin: 0px 0px 0px 15px;
+}
+
+.designPDiv {
+	width: 240px;
+	display: inline-block;
+	position: relative;
+	bottom: 20px;
+	left: 20px;
+
+}
+
+.mainloadmoreDiv {
+	width: 100%;
+	position: relative;
+	top: 60px;
+	left: 10px;
+}
+
+.loadmoreDiv {
+	margin: 0 auto;
+	width: 140px;
+	height: 25px;
+	padding-top: 10px;
+	border: 1px solid black;
+}
+
+.loadmore {
+	font-size: 15px;
+	text-align: center;
+	font-weight: lighter;
+	font-family: 'Poiret One', cursive;
+}
+
+/* FIND YOUR NEIGHBORHOOD */
+
+
+.mainFindNeighborDiv {
+	width: 100%;
+	position: relative;
+	top: 165px;
+	left:  10px;
+}
+
+.findNeighborDiv {
+	margin: 0 auto;
+	width: 240px;
+	height: 25px;
+	padding-top: 10px;
+
+}
+
+.findYourNeightbor {
+	font-size: 14px;
+	text-align: center;
+	font-weight: lighter;
+	font-family: 'Poiret One', cursive;
+}
+
+
+/* DOES Paragraph */
+
+/* <!--DOES Paragraph-->
+<div class="mainDoesParagraphDiv">
+	<div class="DoesParagraphDiv"><p class="DoesParagraphClass"><strong>Does</strong> it have pet-friendly rentals? What are the crime rates? How are the schools? Get important local information on the area you're most interested in.</p></div>
+</div> */
+
+.strongDoes {
+	font-weight: bolder;
+}
+
+.mainDoesParagraphDiv {
+	width: 100%;
+	position: relative;
+	top: 165px;
+	left: 10px;
+}
+
+.DoesParagraphDiv {
+	margin: 0 auto;
+	width: 460px;
+	height: 25px;
+	padding-top: 10px;
+
+}
+
+.DoesParagraphClass {
+	font-size: 15px;
+	text-align: center;
+	font-weight: lighter;
+	line-height: 30px;
+	/* font-family: 'Poiret One', cursive; */
+	font-family: 'Lato', sans-serif;
+}
+
+/* SECOND SEARCH BAR */
+.searchBarSuperTwoDiv {
+	position: relative;
+	top: 270px;
+}
+
+
+/************ REAL ESTATE X FIND YOUR HOME  X SOCIAL MEDIA **************/
+.REALESTATEplusDESIGNDIV {
+	position: relative;
+	top: 480px;
+	height: 100px;
+	/* margin: 0 auto; */
+	width: 100%;
+}
+
+.REALContainerDiv {
+	position: relative;
+	top: 140px;
+	left: 20px;
+	margin: 0 auto;
+}
+
+.REALESTATEMainDiv {
+	display: inline-block;
+	/* background-color: green; */
+	height: 100px;
+	width: 100px;
+	position: relative;
+	top: 20px;
+	left: 499px;
+	letter-spacing: 5px;
+	font-size: 10px;
+	font-family: 'Lato', sans-serif;
+	/* font-family: 'Poiret One', cursive; */
+	/* margin-top: 10px; */
+}
+
+.FINDHOMEDesignText h6 {
+	font-family: 'Poiret One', cursive;
+	font-size: 15px;
+	font-weight: 300;
+
+}
+
+
+.FINDHOMEPlusDiv {
+	float: right;
+	position: relative;
+	right: 510px;
+	bottom: 80px;
+	/* background-color: white; */
+	width: 150px;
+	height: 100px;
+}
+
+.FINDHOMEDesignText h6 {
+	display: inline block;
+	position: relative;
+	left: 50px;
+	bottom: 10px;
+	
+
+}
+
+.dotdot {
+	/* background-color: white; */
+	width: 50px;
+	height: 10px;
+	position: relative;
+	left: 620px;
+	bottom: 75px;
+	font-size: 25px;
+}
+
+
+/* SOCIAL MEDIA!! */
+.socialMediaDiv {
+	position: relative;
+	top: 10px !important;
+	left: 35px !important;
+}
+
+.socialStyle {
+	margin: 0px 10px 0px 10px;
+	text-decoration: none;
+}
+
+a:visited {
+	color: black;
+}
+
+
+/* COPY RIGHT INFORMATION!!!! */
+
+
+.creditCredit {
+		position: relative;
+		top: 1120px;
+		height: 70px;
+		width: 100%;
+		word-spacing: 3px;
+		font-size: 18px;
+		color: grey;
+	}
+
+	.copyRight {
+		position: relative;
+		margin: 0 auto;
+		height: 70px;
+		width: 130px;
+		text-decoration: none;
+		/* font-family: 'Poiret One', cursive; */
+		font-family: 'Lato', sans-serif;
+	}
+
+	.designedCC {
+		margin: 10px 0px 10px 0px;
+		width: 200px;
+
+
+	}
+
+.createdCC {
+	width: 190px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BACKGROUNDS */
+
+.bg0 {
+	min-height: 100vh;
+  background: url(../img/bg0.jpg) no-repeat center center; 
+  background-size: cover;
+  /* background-attachment: fixed; */
+  display: flex;
+  flex-direction: column;
+}
+
+.bg1 {
+	min-height: 100vh;
+  background: url(../img/bg1.jpg) no-repeat center center; 
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.bg2 {
+	min-height: 100vh;
+  background: url(../img/bg2.jpg) no-repeat center center; 
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* .bg0 {
+	background-image: url(../img/bg0.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+    height: 462px;
+	background-repeat: no-repeat;
+	background-size:100% auto;
+	overflow: visible;
+
+} */
+
+
+/* .bg1 {
+	background-image: url(../img/bg1.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+    height: 862px;
+	background-repeat: no-repeat;
+	background-size:100% auto;
+	overflow: visible;
+
+} */
+	
+
+.bg2 {
+	background-image: url(../img/bg2.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+ 	height: 862px;
+	background-repeat: no-repeat;
+	background-size:100% auto;
+	overflow: visible;
+
+}
+
+
+.bg3 {
+	background-image: url(../img/bg3.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 1195px;
+	background-repeat: no-repeat;
+	background-size:100% auto;
+	overflow: visible;
+}
+
+/*MEDIA QUERIES*/
