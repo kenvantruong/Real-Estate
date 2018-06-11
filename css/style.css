@@ -5,29 +5,11 @@
 /* NAV */
 .navBar {
 	height: 70px;
+	width: 100%;
 
 }
 
-/*
-<nav class="navBar">
-			<div class="container">
-				<div class="realEstateDiv">
-					<div class="insideLeftDiv">
-							<h3 class="realText">Real</h3>
-							<h4 class="estateText">Estate</h4>
-						</div>
-							</div>
-							<div class="signInJoin">
-								<div class="insideSignInJoin">
-									<div class="signInText">SIGN IN</div>
-									<div class="joinInText">JOIN</div>
-								</div>
-									</div>
-				</div>
-		</nav>
-*/
-
-/*  Navagation Div  */
+/* Navagation Div */
 .container{	display: flex;}
 
 /* Navagation Left Part */
@@ -43,8 +25,8 @@
 }
 
 .insideLeftDiv {
-	padding: 30px;
-	/*  background-color: blue;  */
+	padding: 33px;
+	border: 1px solid black;
 
 }
 .realText {
@@ -72,11 +54,13 @@
 		/* background: red; */
 		font-family: 'Lato', sans-serif;
 		padding: 30px;
+		border: 1px solid black;
 }
 
 .insideSignInJoin {
 	display: flex;
 	float: right;
+	border: 1px solid black;
 }
 
 .signInText {
@@ -103,21 +87,35 @@
 }
 
 /* HOUSE ICON */
-	.houseIconDiv {
-		position: relative;
-		top: 53px;
-		height: 70px;
-		width: 100%;
-	}
+.houseIconDiv-container {
+	display: flex;
+	position: relative;
+	/* top: 53px; */
+	height: 181px;
+}
 
-	.houseIconLogoDiv {
-		position: relative;
-		margin: 0 auto;
-		height: 70px;
-		width: 70px;
-		right: 7px;
-		bottom: 10px;
-	}
+.position-left-houseicon { flex: 1; border: 1px solid black;}
+.position-right-houseicon { flex: 1; border: 1px solid black;}
+
+.houseIconLogoDiv {
+	position: relative;
+	flex: 1;
+	margin: 0 auto;
+	height: 70px;
+	width: 74px;
+	right: 7px;
+}
+
+
+.houseIconLogoDiv {
+	     /* position: relative; */
+			 flex: 1;
+			 margin: 0 auto;
+			 height: 70px;
+			 width: 74px;
+			 right: 7px;
+			 top: 105px;
+}
 
 	.houseIcon {
 		background-image: url(../img/houseIcon.png);
@@ -131,16 +129,42 @@
 
 
 /*UNDER HOUSEICON TEXT*/
-.mainfontRealEstateDiv {
+.houseIconDiv-container {
+	display: flex;
 	position: relative;
-	top: 55px;
-	left: 8px;
+	top: 53px;
+}
+
+
+
+.mainfontRealEstate-Container {
+	display: flex;
 	height: 140px;
+	/* top: 55px; */
+	position: relative;
+	top: 53px;
+}
+.mainfont-leftheader {
+	flex: 1;
+	border: 1px solid black;
+}
+.mainfont-rightheader {
+	flex: 1;
+	border: 1px solid black;
+}
+
+
+.mainfontRealEstateDiv{
+	flex: 1;
 	text-align: center;
-	/* font-family: 'Poiret One', cursive; */
+	border: 1px solid black;
+	position: relative;
+	/* top: 53px; */
+		/* font-family: 'Poiret One', cursive; */
 	/* font-family: 'Abril Fatface', cursive; */
 	/* font-weight: lighter; */
 }
+
 
 .REALh1 {
 	font-size: 3em;
@@ -183,7 +207,7 @@
 
 .REALparagraphMainDiv {
 	position: relative;
-	top: 100px;
+	top: 200px;
 	left: 8px;
 	height: 140px;
 	width: 100%;
@@ -223,15 +247,19 @@
 
 /************************/
 
-.search-bar-container {
-	display: flex;
-	top: 95px;
+.search-bar-area {
+	flex: 1;
+	top: 93px;
 	position: relative;
+	width: 100%;
 	height: 49px;
+	/* background-color: red; */
 }
 
 .search-container{
-  width: 490px;
+	max-width: 506px;
+  position: relative;
+  right: 14px;
   display: block;
   margin: 0 auto;
 }
@@ -457,22 +485,33 @@ input#search-bar{
 
 /**********************MENU AREA!!!!! *****************/
 
-.menuArea-Container {
+.menu-container-icon {
 	display: flex;
+	/* background-color: blue; */
+	position: relative;
+	top: -110px;
 }
 
-.menuDiv {
-	width: 100%;
-	height: 100px;
-	position: relative;
-	top: 500px;
-	/* background-color: green; */
+.menu-leftside-position {
+	flex: 6;
+	order: 3;
+	width: 200px;
+	/* background-color: #1ce; */
 }
+.menu-rightside-position {
+	flex: 1;
+	order: 1;
+	/* background-color: #1ce; */
+}
+
 
 .menuAndText {
-	position:relative;
-	left: 150px;
-	top: 50px;
+	flex: 1;
+	order: 2;
+	position: relative;
+	max-width: 200px;
+	min-width: 200px;
+	/* background-color: red; */
 }
 
 	.menuIcon {
@@ -504,26 +543,40 @@ input#search-bar{
 
 /* RIGHT UNDER MENU!!!!!! */
 .interiorExteriorBar {
-	width: 100%;
+	order: 4;
+	/* max-width: 800px; */
 	height: 30px;
-	/* background-color: red; */
-	position: relative;
 	top: 540px;
 	font-family: 'Lato', sans-serif;
 	/* font-weight: 900; */
 }
 
+.interiorDivOptionOne {
+	flex: 2.6;
+			width: 300px;
+
+	}
+
+	.interiorDivOptionthree {
+    order: 3;
+    flex: 3;
+    width: 300px;
+
+}
+
 .interiorExteriorDiv {
+	flex: 2;
 	display: inline-block;
-	position: relative;
 	left: 110px;
+	min-width: 266px;
+
 	/* font-weight: 900; */
 }
 
 .interiorText {
 	display: inline-block;
 	margin: 0px 20px 0px 20px;
-	font-size: 16px;
+	font-size: 13px;
 	font-weight: 700;
 	font-weight: 900 !important;
 }
@@ -531,20 +584,20 @@ input#search-bar{
 .exteriorText {
 	display: inline-block;
 	margin: 0px 20px 0px 50px;
-	font-size: 16px;
+	font-size: 13px;
 }
 
 
 .prevNextDiv {
-	float: right;
 	display: inline-block;
-	position: relative;
-	right: 490px;
+	text-align: right;
+	min-width: 128px;
+	
 }
 
 .prevText {
 	display: inline-block;
-	font-size: 20px;
+	font-size: 13px;
 	margin: 0px 10px 0px 10px;
 }
 
@@ -554,16 +607,17 @@ input#search-bar{
 	display: inline-block;
 	position: relative;
 	bottom: 5px;
+
 }
 
 .hrPrevNext {
-	width: 20px;
+	width: 13px;
 	color: black;
 }
 
 .nextText {
 	display: inline-block;
-	font-size: 20px;
+	font-size: 13px;
 	margin: 0px 10px 0px 10px;
 }
 
@@ -583,21 +637,127 @@ input#search-bar{
 
 /* LEVEL 3 PAGE  */
 .latestPropertyDiv {
-	position: relative;
+	display: flex;
+	height: 846px;
+	/* position: relative;
+	
 	top: 15px;
 	left: 130px;
 	width: 600px;
-	height: 400px;
+	height: 400px; */
 	
+}
+
+.textOne-div{
+	display: flex;
+	flex-direction: column;
+	height: 846px;
+	background-color: red;
+	
+}
+
+.inside-container-div-one {
+	flex: 1;
+	
+}
+
+.inside-container-div-two {
+	flex: 1;
+	position: relative;
 }
 
 .latestPropertyText {
 	font-size: 23px;
-	letter-spacing: 6px;
-	word-spacing: 25px;
-	line-height: 190px;
-	font-family: 'Poiret One', cursive;
+    letter-spacing: 6px;
+    word-spacing: 25px;
+		line-height: 218px;
+    font-family: 'Poiret One', cursive;
+    min-width: 438px;
+
+    
 }
+
+.textZero-div {
+	flex: .6;
+	order: 1;
+	background-color: blue;
+
+}
+
+
+.textOne-div {
+	flex: 3.5;
+	order: 2;
+	
+
+	/* border: 1px solid black; */
+}
+
+.textTwo-div {
+	flex: 2;
+	order: 3;
+	background-color: green;
+	position: relative;
+}
+
+/* img */
+.front-side-img-div {
+	height: 750px;
+	width: 364px;
+	position: absolute;
+	bottom: 74px;
+}
+
+.full-size-img {
+	background: url(../img/front-side-img.png) no-repeat center; 
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+
+/* img under <div class="min-box-img-div">
+									<div class="min-box-img"></div>*/
+
+.min-box-img-div {
+	height: 289px;
+    width: 222px;
+    /* width: 100%; */
+    position: relative;
+    left: 245px;
+    top: 406px;
+    /* left: 100px; */
+    background-color: grey;
+    border: 1px solid #000;
+}
+
+.min-box-img {
+	background: url(../img/min-box-img.png) no-repeat center; 
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+
+
+/* <div class="textTwo-div">
+							<div class="front-side-img-div">
+
+							</div>
+							<div class="min-box-img-div">
+
+							</div>
+					</div> */
+
+
 
 .architText {
 	font-size: 95px;
@@ -606,28 +766,31 @@ input#search-bar{
 	line-height: 145px;
 	font-family: 'Abril Fatface', cursive;
 	font-weight: lighter;
+	position: relative;
+	bottom: 52px;
 }
 
 
 .modernMainDiv {
 	position: relative;
-	top: 140px;
+	/* top: 140px;
 	width: 100%;
-	height: 300px;
+	height: 300px; */
 	overflow: visible;
 }
 
 .MODERNparagraphDiv {
 	position: relative;
-	left: 120px;
+	max-width: 583px;
+	/* left: 120px;
 	width: 530px;
-	height: 300px;
+	height: 300px; */
 
 
 }
 
 .REALmodernparagraph {
-	font-size: 22px;
+	font-size: 16px;
 	line-height: 35px;
 	font-family: 'Lato', sans-serif;
 	/* font-family: 'Poiret One', cursive; */
@@ -935,28 +1098,44 @@ a:visited {
 /* BACKGROUNDS */
 
 .bg0 {
-	min-height: 100vh;
+	min-height: 85vh;
   background: url(../img/bg0.jpg) no-repeat center center; 
-  background-size: cover;
+	background-size: cover;
+	width: 100%;
   /* background-attachment: fixed; */
-  display: flex;
-  flex-direction: column;
 }
 
 .bg1 {
 	min-height: 100vh;
   background: url(../img/bg1.jpg) no-repeat center center; 
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
+	background-size: cover;
+	width: 100%;
 }
 
+
+
 .bg2 {
+	background-image: url(../img/bg2-white.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 100%;
 	min-height: 100vh;
-  background: url(../img/bg2.jpg) no-repeat center center; 
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
+	background-repeat: no-repeat;
+	background-size:100% auto;
+	overflow: visible;
+
+}
+
+
+.bg3 {
+	background-image: url(../img/bg3.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 1195px;
+	background-repeat: no-repeat;
+	background-size:100% auto;
+	overflow: visible;
 }
 
 
@@ -985,30 +1164,17 @@ a:visited {
 	overflow: visible;
 
 } */
-	
-
-.bg2 {
-	background-image: url(../img/bg2.jpg);
-	background-size: cover;
-	background-position: center;
-	width: 100%;
- 	height: 862px;
-	background-repeat: no-repeat;
-	background-size:100% auto;
-	overflow: visible;
-
-}
 
 
-.bg3 {
-	background-image: url(../img/bg3.jpg);
-	background-size: cover;
-	background-position: center;
-	width: 100%;
-	height: 1195px;
-	background-repeat: no-repeat;
-	background-size:100% auto;
-	overflow: visible;
-}
+
+
+
+
+
+
+
 
 /*MEDIA QUERIES*/
+
+
+
