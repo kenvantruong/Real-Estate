@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 
-<!-- Responive Design -->
+<!--Responive Design-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Real Estate</title>
@@ -13,7 +13,7 @@
 <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:100|Poiret+One" rel="stylesheet">
 </head>
 <body>
-<!--BACKGROUND LEVEL 1-->
+<!--BACKGROUND LEVEL 0-->
 <div class="bg0">
 <!-- 	NAVAGATION -->
 		<nav class="navBar">
@@ -33,24 +33,31 @@
 					</div>
 		</nav>
 <!-- HOUSE LOGO SPOT -->
-		<div class="houseIconDiv">
-		<div class="houseIconLogoDiv"><h1 class="houseIcon"></h1></div>
+		<div class="houseIconDiv-container">
+				<div class="position-left-houseicon" style="border: 1px solid black;"></div>
+						<div class="houseIconDiv"><div class="houseIconLogoDiv"><h1 class="houseIcon"></h1></div></div>
+			<div class="position-right-houseicon style="border: 1px solid black;"></div>
 		</div>
-	<div class="mainfontRealEstateDiv">
-		<h1 class="REALh1">REAL</h1>
-		<h2 class="ESTATEh2">ESTATE</h2>
-		<div class="styleHR"><hr class="brUnderMainFont"></hr></div>
-	</div>
-		<div class="REALparagraphMainDiv">
-		<div class="REALparagraphDiv"><p class="REALparagraph"><strong>REAL</strong> is an all-in-one real estate website that gives you the local</p> <p class="REALparagraph">scoop about homes for sale, apartments for rent, neighborhood</p> <p class="REALparagraph">insights, and real estate markets.</p></div>
 
+	<div class="mainfontRealEstate-Container">
+		<div class="mainfont-leftheader"></div>
+				<div class="mainfontRealEstateDiv">
+						<h1 class="REALh1">REAL</h1>
+						<h2 class="ESTATEh2">ESTATE</h2>
+						<div class="styleHR"><hr class="brUnderMainFont"></hr></div>
+				</div>
+		<div class="mainfont-rightheader"></div>
 	</div>
+	
+			<div class="REALparagraphMainDiv">
+			<div class="REALparagraphDiv"><p class="REALparagraph"><strong>REAL</strong> is an all-in-one real estate website that gives you the local</p> <p class="REALparagraph">scoop about homes for sale, apartments for rent, neighborhood</p> <p class="REALparagraph">insights, and real estate markets.</p></div>
+		</div>
 		
 													
 </div>
-<!--BACKGROUND LEVEL 2 -->
+<!--BACKGROUND LEVEL 2-->
 <div class="bg1">
-	<div class="search-bar-container">
+	<div class="search-bar-area">
 		<form class="search-container">
 				<input type="text" id="search-bar" placeholder="Search new homes...">
 				<a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
@@ -59,68 +66,78 @@
 
 
 
+			</div>
+			<div class="menu-container-icon">
+					<div class="menu-leftside-position"></div>
+					<div class="menuAndText">
+							<div class="menuIconLogoDiv"><h1 class="menuIcon"></h1></div>
+							<div class="menuTextDiv"><h5 class="menuText">MENU</h5></div>
+					</div>
+					<div class="menu-rightside-position"></div>
+			</div>
 
+					<!--NAVGATION RIGHT UNDER MENU!!!	-->
+		<div class="interiorExteriorBar" style="display:flex;">
 
+				<div class="interiorDivOptionOne" style="flex:1;"></div>
 
-
-
-
-
-
-
-
-
-
-<!--  <div class="searchBarSuperDiv">
-	<div class="toggleIconDiv">
-			<div class="toggleIconh1"></div>
-	</div>
-				  <div class="searchbarDIVDIV">
-	<input type="search" class="searchbar--input" placeholder="Search...">
-	<input type="submit" class="searchbar--submit" value="Search">
-	
-  <div class="searchbar--buttons">
-    <div class="select-wrapper">
-    </div>
-		</div>
-  </div>
-</div> -->
-<div class="menuArea-Container">
-		<div class="menuDiv">
-				<div class="menuAndText">
-				<div class="menuIconLogoDiv"><h1 class="menuIcon"></h1></div>
-				<div class="menuTextDiv"><h5 class="menuText">MENU</h5></div>
+				<div class="interiorExteriorDiv" style="flex:2;">
+						<h3 class="interiorText">INTERIOR</h3>
+						<h4 class="exteriorText">EXTERIOR</h4>
 				</div>
-		</div>	
-		<!--NAVGATION RIGHT UNDER MENU!!!	-->
-		<nav class="interiorExteriorBar">
-			<div class="interiorExteriorDiv">
-					<h3 class="interiorText">INTERIOR</h3>
-					<h4 class="exteriorText">EXTERIOR</h4>
-			</div>
-			<div class="prevNextDiv">
-					<div class="prevText">PREV</div>
-					<div class="prevNextHRDiv"><hr class="hrPrevNext"></hr></div>
-					<div class="nextText">NEXT</div>
-			</div>
-		</nav>
-</div>
-		
-			</div>
-<div class="bg2">
-		<div class="latestPropertyDiv">
-		<h1 class="latestPropertyText">LATEST PROPERTY NEWS</h1>
-		<h2 class="architText">ARCHIT ECTURE</h2>
-	</div>
-		<div class="modernMainDiv">
-		<div class="MODERNparagraphDiv"><p class="REALmodernparagraph">
-		<strong>Modern</strong> House Exterior Exceptonal Decor Ideas. House Plans Modern Tropical House Architecture A Modern Concrete Homes Modern Concept Designs Ideas. Architect Design Luxury Style Fitted Beige Sofa Chair In Awsome Design Of House And Beautiful Swimming Pool</p></div>
 
-	</div>	
+				<div class="interiorDivOptionthree"></div>
+
+				<div class="prevNextDiv" style="flex:5;">
+						<div class="prevText">PREV</div>
+						<div class="prevNextHRDiv"><hr class="hrPrevNext"></hr></div>
+						<div class="nextText">NEXT</div>
+				</div>
+
+				<div class="interiorDivOptionfive" style="flex:1;"></div>
+		</div>
+	</div>
+
+			
+<div class="bg2">
+	<div class="property-container">
+			<div class="latestPropertyDiv">
+					<div class="textOne-div">
+							<div class="inside-container-div-one">
+									<h1 class="latestPropertyText">LATEST PROPERTY NEWS</h1>
+							</div>
+							<div class="inside-container-div-two">
+									<h2 class="architText">ARCHIT ECTURE</h2>
+							</div>
+							<div class="inside-container-div-three">
+								<div class="modernMainDiv">
+										<div class="MODERNparagraphDiv"><p class="REALmodernparagraph">
+										<strong>Modern</strong> House Exterior Exceptonal Decor Ideas. House Plans Modern Tropical House Architecture A Modern Concrete Homes Modern Concept Designs Ideas. Architect Design Luxury Style Fitted Beige Sofa Chair In Awsome Design Of House And Beautiful Swimming Pool</p></div>
+								</div>
+
+								</div>
+					</div>
+
+					<div class="textZero-div"></div>
+					
+					<div class="textTwo-div">
+							<div class="min-box-img-div">
+									<div class="min-box-img"></div>
+							</div>
+							<div class="front-side-img-div">									
+								<div class="full-size-img"></div>
+							</div>
+					</div>
+					</div>
+
+						<div class="side-img-border">
+
+
+			</div>
+</div>
 	
 	
-	
-<!--	01-02 LOGO AND FONTS -->
+<!--	01-02 LOGO AND FONTS-->
 
 <div class="LOGOplusDESIGNDIV">
 	<div class="zeroMainDiv">
@@ -157,7 +174,7 @@
 					  </div>
   </div>
 </div>
-<!-- BELOW SEARCH BAR -->
+<!--BELOW SEARCH BAR-->
 <div class="REALESTATEplusDESIGNDIV">
 <div class="REALContainerDiv">
 	<div class="REALESTATEMainDiv">
