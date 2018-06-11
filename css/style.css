@@ -26,7 +26,6 @@
 
 .insideLeftDiv {
 	padding: 33px;
-	border: 1px solid black;
 
 }
 .realText {
@@ -54,13 +53,11 @@
 		/* background: red; */
 		font-family: 'Lato', sans-serif;
 		padding: 30px;
-		border: 1px solid black;
 }
 
 .insideSignInJoin {
 	display: flex;
 	float: right;
-	border: 1px solid black;
 }
 
 .signInText {
@@ -72,6 +69,8 @@
 	width: 60px;
 	text-align: center;
 	font-size: 12px;
+	box-shadow: 9px 7px 76px 0px rgba(0,0,0,0.05);
+
 }
 .joinInText {
 	margin: 5px;
@@ -84,6 +83,8 @@
 	color: white;
 	background-color: #5281e7;
 	text-align: center;
+	box-shadow: 9px 7px 76px 0px rgba(0,0,0,0.05);
+
 }
 
 /* HOUSE ICON */
@@ -94,8 +95,8 @@
 	height: 181px;
 }
 
-.position-left-houseicon { flex: 1; border: 1px solid black;}
-.position-right-houseicon { flex: 1; border: 1px solid black;}
+.position-left-houseicon { flex: 1; }
+.position-right-houseicon { flex: 1; }
 
 .houseIconLogoDiv {
 	position: relative;
@@ -146,18 +147,17 @@
 }
 .mainfont-leftheader {
 	flex: 1;
-	border: 1px solid black;
+
 }
 .mainfont-rightheader {
 	flex: 1;
-	border: 1px solid black;
+
 }
 
 
 .mainfontRealEstateDiv{
 	flex: 1;
 	text-align: center;
-	border: 1px solid black;
 	position: relative;
 	/* top: 53px; */
 		/* font-family: 'Poiret One', cursive; */
@@ -338,7 +338,6 @@ input#search-bar{
 	margin: 0 auto;
 	/* overflow: visible;
 	right: 50px; */
-	background-color: red;
 }
 
 
@@ -391,7 +390,7 @@ input#search-bar{
   height: 60px;
   font-size: 12px;
 	font-weight: lighter;
-	background-color: blue;
+	background-color: #d0cfce0d;
 }
 
 
@@ -420,7 +419,8 @@ input#search-bar{
   letter-spacing: .5px;
   /* border-radius: 4px; */
   color: #fff;
-  background-color: #5281e7;
+	background-color: #5281e7;
+	border-radius: 5px;
 }
 /* @media (max-width: 767px) {
   .searchbar--submit {
@@ -652,7 +652,6 @@ input#search-bar{
 	display: flex;
 	flex-direction: column;
 	height: 846px;
-	background-color: red;
 	
 }
 
@@ -677,10 +676,11 @@ input#search-bar{
     
 }
 
+
+
 .textZero-div {
 	flex: .6;
 	order: 1;
-	background-color: blue;
 
 }
 
@@ -696,7 +696,6 @@ input#search-bar{
 .textTwo-div {
 	flex: 2;
 	order: 3;
-	background-color: green;
 	position: relative;
 }
 
@@ -706,6 +705,7 @@ input#search-bar{
 	width: 364px;
 	position: absolute;
 	bottom: 74px;
+	box-shadow: 9px 7px 76px 0px rgba(0,0,0,0.55);
 }
 
 .full-size-img {
@@ -730,7 +730,6 @@ input#search-bar{
     top: 406px;
     /* left: 100px; */
     background-color: grey;
-    border: 1px solid #000;
 }
 
 .min-box-img {
@@ -797,16 +796,34 @@ input#search-bar{
 }
 
 
+/* <div class="LOGOplusDESIGNDIV" style="display: flex;">
+
+	<div class="zero-container" style="flex: 1; background-color: green;"></div>
+			<div class="zeroMainDiv">
+					<div class="zerohOneDiv"></div>
+			</div>
+	</div>	
+	
+	<div class="designplus-container" style="flex: 1; background-color: red;">
+			<div class="DESIGNPlusDiv">
+					<div class="classDesignText"><h6>DESIGN<div class="hrDESIGNDiv"><hr class="hrDESIGNStyle"></hr></div></h6></div>
+					
+					<div class="designPDiv"><p class="pDESIGNText">Ultra Modern House Home Design With Unique White Roof Also Gray Orange White Exterior Color Combinations Best House Exterior Design Ideas.</p></div>
+			</div>
+	</div>
+</div> */
+
 
 /******************0102 LOGO AND DESIGN FONT!!!!*****************/
 .LOGOplusDESIGNDIV {
-	postion: relative;
 	position: relative;
 	top: 50px;
 	/* background-color: red; */
 	height: 300px;
-	width: 100%;
 }
+
+.zero-container {width: 200px; height: 200px;}
+.designplus-container {width: 200px; height: 200px;}
 
 .zeroMainDiv {
 	display: inline-block;
@@ -814,7 +831,9 @@ input#search-bar{
 	height: 170px;
 	width: 70px;
 	position: relative;
-	left: 120px;
+	bottom: 25px;
+	left: 133px;
+	box-shadow: 9px 7px 76px 0px rgba(0,0,0,0.35);
 }
 
 .zerohOneDiv {
@@ -831,6 +850,12 @@ input#search-bar{
 	position: relative;
 	right: 210px;
 	top: 80px;
+}
+
+.inside-design-container {
+	position: relative;
+	/* left: 2px; */
+	bottom: 100px;
 }
 
 .classDesignText h6 {
@@ -878,6 +903,7 @@ input#search-bar{
 	height: 25px;
 	padding-top: 10px;
 	border: 1px solid black;
+	border-radius: 5px;
 }
 
 .loadmore {
