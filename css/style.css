@@ -27,7 +27,7 @@
 		</nav>
 */
 
-/* Navagation Div */
+/*  Navagation Div  */
 .container{	display: flex;}
 
 /* Navagation Left Part */
@@ -44,7 +44,7 @@
 
 .insideLeftDiv {
 	padding: 30px;
-	/* background-color: blue; */
+	/*  background-color: blue;  */
 
 }
 .realText {
