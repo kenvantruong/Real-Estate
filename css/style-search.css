@@ -1,0 +1,417 @@
+a:focus {color: #fff;}
+
+
+/******* Navigation Section ********/
+
+#top-nav {
+  display: flex;
+  height: 60px;
+  background-color: #5483ef;
+  color: #fff;
+  
+  vertical-align: middle;
+  line-height: 25px;
+}
+
+.nav-logo {
+  flex: 1;
+  text-align: center;
+  line-height: 55px;
+  padding-left: 15px;
+  font-size: 16px;
+
+}
+
+.nav-options {flex: 6; }
+.nav-options ul li:first-child {margin-left: -5px;}
+.nav-options ul li{
+  margin: 0px 13px 0px 10px;
+  display: inline-block;  
+}
+
+
+
+.savedNsearches {flex: 3;}
+.savedNsearches ul {float: right;}
+
+.savedNsearches ul li{
+  display: inline-block;  
+  margin-right: 18px;
+
+}
+
+.nav-signin {flex: 1;}
+.nav-signin button{
+  flex: 1;
+  border: 1px solid black;
+  text-align: center;
+  margin: 8px 27px 0px 10px;
+  padding: 8px 12px;
+  float: right;
+}
+
+
+/******* Search & Filter Section Right Under Nav ********/
+/* <div class="search-filter-nav">
+        <form class="search-container">
+            <input type="text" id="search-bar" placeholder="San Francisco, CA">
+            <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+          </form>
+      </div> */
+
+
+.search-filter-nav {
+  display: flex;  
+  flex-wrap: wrap;
+
+    padding: 10px;
+}
+
+
+.search-container {
+  flex: 1;
+  display: inherit;
+  max-width: 349px;
+  border-radius: 6px;
+  
+}
+
+
+.nav-filter-options {flex: 1;}
+.nav-filter-options ul li{
+  display: inline-block;  
+}
+
+
+
+input#search-bar {
+  margin: 0 auto;
+  width: 271px;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 1rem;
+  border: 1px solid #D0CFCE;
+  outline: none;
+  
+  -moz-border-radius-topleft: 6px;
+  -webkit-border-top-left-radius: 6px;
+  border-top-left-radius: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+
+}
+input#search-bar:focus {
+  border: 1px solid #008ABF;
+  transition: 0.35s ease;
+  color: #008ABF;
+}
+input#search-bar:focus::-webkit-input-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+input#search-bar:focus::-moz-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+input#search-bar:focus:-ms-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+
+.search-icon-div {
+  display: inline-block;
+  font-size: 19px;
+  padding: 9px 14px;
+  border: 1px solid #D0CFCE;
+  position: relative;
+
+  -moz-border-radius-topright: 6px;
+-webkit-border-top-right-radius: 6px;
+border-top-right-radius: 6px;
+-moz-border-radius-bottomright: 6px;
+-webkit-border-bottom-right-radius: 6px;
+border-bottom-right-radius: 6px;
+  
+}
+
+/* ------Drop Down-------- */
+.custom-test {
+  border: 1px solid #D0CFCE;
+  height: 40px;
+  margin: 0px 12px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+  top: 5px;
+  color: #000;
+  border-radius: 5px;
+
+}
+
+.box-size-nav-u {
+  border: 1px solid #D0CFCE;
+  height: 40px;
+}
+
+.anyPrice-div {
+  
+
+}
+
+
+.saveSearch-div button {
+  background-color: #5483ef;
+  color: #fff;
+  float: left; 
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+  padding: 0px 21px;
+  border-radius: 5px;
+}
+
+
+
+/* <!-- ****** Homes Listing Left Side ******* --> */
+/* <!-- ****** Google Map Listing Right Side ******* --> */
+#homesNMap-main-platform {
+  display: flex;
+  flex-wrap: wrap;
+  height: 728px;
+  weight: 100%;
+}
+
+.leftside-homes-container {
+  flex: 1;
+  background-color: #e8e9ea;
+  
+}
+
+.rightside-map-container {
+  flex: 1;
+  background-color: #1ce;
+
+}
+
+
+.sortforyou-container {width: 100%; height: 65px; background-color: #fff;}
+
+.sortforyou-div {
+  border: 1px solid #D0CFCE;
+    height: 40px;
+    width: 200px;
+    margin: -1px 8px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    /* top: 4px; */
+    color: #000;
+    border-radius: 5px;
+    
+}
+
+.paragraph-div-under {
+  width: 100%; height: 46px; 
+  border-bottom: 1px solid black;
+  background-color: #fff;
+}
+
+.paragraph-div-under p {
+  padding: 0px 10px;
+  text-align: left;
+  line-height: 40px;
+
+}
+
+/* <!-- ****** Homes Listing Left Side - Sections 1-4******* --> */
+.homes-list-platform {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.home-custom {
+  flex: 1;
+  background-color: #fff;
+    border: 1px solid black;
+    max-height: 292px;
+    min-height: 292px;
+    min-width: 300px;
+    margin: 8px;
+}
+
+/* ****** Section 1 *******  */
+
+.home-section-1 .img-div{
+  min-width: 287px;
+  height: 164px;
+  background: url(../img-houses/1.png) no-repeat center center; 
+  background-size: cover;
+
+}
+
+.home-section-1 .price-div {
+  min-width: 287px;
+    height: 33px;
+    padding: 0px 12px;
+    text-align: left;
+    line-height: 40px;
+    font-size: 21px;
+    letter-spacing: 1px;
+
+}
+
+.home-section-1 .bdBaSqft-div {
+  min-height: 10px;
+  max-height: 11px;
+  padding: 10px 5px;
+  text-align: left;
+  font-size: 18px;
+}
+
+.home-address {
+  vertical-align: top;
+}
+
+
+.home-address .addy {
+  font-size: 17px;
+    padding: 0px 5px;
+    position: relative;
+    bottom: 22px;
+    left: 5px;
+}
+
+
+/* ****** Section 2 *******  */
+
+.home-section-2 .img-div{
+  min-width: 287px;
+  height: 164px;
+  background: url(../img-houses/2.png) no-repeat center center; 
+  background-size: cover;
+
+}
+
+.home-section-2 .price-div {
+  min-width: 287px;
+    height: 33px;
+    padding: 0px 12px;
+    text-align: left;
+    line-height: 40px;
+    font-size: 21px;
+    letter-spacing: 1px;
+
+}
+
+.home-section-2 .bdBaSqft-div {
+  min-height: 10px;
+  max-height: 11px;
+  padding: 10px 5px;
+  text-align: left;
+  font-size: 18px;
+}
+
+.home-address {
+  vertical-align: top;
+}
+
+
+.home-address .addy {
+  font-size: 17px;
+    padding: 0px 5px;
+    position: relative;
+    bottom: 22px;
+    left: 5px;
+}
+
+/* ****** Section 3 *******  */
+
+.home-section-3 .img-div{
+  min-width: 287px;
+  height: 164px;
+  background: url(../img-houses/3.png) no-repeat center center; 
+  background-size: cover;
+
+}
+
+.home-section-3 .price-div {
+  min-width: 287px;
+    height: 33px;
+    padding: 0px 12px;
+    text-align: left;
+    line-height: 40px;
+    font-size: 21px;
+    letter-spacing: 1px;
+
+}
+
+.home-section-3 .bdBaSqft-div {
+  min-height: 10px;
+  max-height: 11px;
+  padding: 10px 5px;
+  text-align: left;
+  font-size: 18px;
+}
+
+.home-address {
+  vertical-align: top;
+}
+
+
+.home-address .addy {
+  font-size: 17px;
+    padding: 0px 5px;
+    position: relative;
+    bottom: 22px;
+    left: 5px;
+}
+
+/* ****** Section 4 *******  */
+
+.home-section-4 .img-div{
+  min-width: 287px;
+  height: 164px;
+  background: url(../img-houses/4.png) no-repeat center center; 
+  background-size: cover;
+
+}
+
+.home-section-4 .price-div {
+  min-width: 287px;
+    height: 33px;
+    padding: 0px 12px;
+    text-align: left;
+    line-height: 40px;
+    font-size: 21px;
+    letter-spacing: 1px;
+
+}
+
+.home-section-4 .bdBaSqft-div {
+  min-height: 10px;
+  max-height: 11px;
+  padding: 10px 5px;
+  text-align: left;
+  font-size: 18px;
+}
+
+.home-address {
+  vertical-align: top;
+}
+
+
+.home-address .addy {
+  font-size: 17px;
+    padding: 0px 5px;
+    position: relative;
+    bottom: 22px;
+    left: 5px;
+}
+
+/********* Google Map Area **********/
+.rightside-map-container {
+  border: 2px solid #e8e9ea; 
+  min-width: 600px;
+}
